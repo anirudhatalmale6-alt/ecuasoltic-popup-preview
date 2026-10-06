@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Terms Consent Popup — EcuasolTIC</title>
+<style>
+	:root {
+		--navy: #0b5a78;
+		--cyan: #1ebbf0;
+		--ink: #2d3748;
+		--muted: #5a6478;
+		--line: #dfe3eb;
+		--soft: #f7f9fc;
+	}
+
+	* { box-sizing: border-box; }
+
+	body {
+		margin: 0;
+		padding: 0 1.25rem 4rem;
+		font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+		color: var(--ink);
+		background: #fff;
+	}
+
+	.wrap { max-width: 56rem; margin: 0 auto; }
+
+	header {
+		margin: 0 -1.25rem 2.5rem;
+		padding: 2.25rem 1.25rem;
+		background: var(--navy);
+		color: #fff;
+	}
+
+	header .wrap { max-width: 56rem; }
+	header h1 { margin: 0 0 .35rem; font-size: 1.5rem; line-height: 1.25; }
+	header p  { margin: 0; opacity: .85; font-size: .95rem; }
+
+	h2 {
+		margin: 2.75rem 0 .35rem;
+		font-size: 1.15rem;
+		color: var(--navy);
+	}
+
+	h2:first-of-type { margin-top: 0; }
+
+	.note {
+		margin: 0 0 1rem;
+		color: var(--muted);
+		font-size: .92rem;
+	}
+
+	figure {
+		margin: 0 0 1.5rem;
+		border: 1px solid var(--line);
+		border-radius: 8px;
+		overflow: hidden;
+		background: var(--soft);
+	}
+
+	figure img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	figcaption {
+		padding: .7rem .9rem;
+		border-top: 1px solid var(--line);
+		font-size: .85rem;
+		color: var(--muted);
+	}
+
+	.pair { display: grid; gap: 1.5rem; }
+	@media (min-width: 46rem) { .pair { grid-template-columns: 1fr 1fr; } }
+
+	.phones { display: grid; gap: 1.5rem; justify-items: start; }
+	@media (min-width: 40rem) { .phones { grid-template-columns: repeat(2, minmax(0, 15rem)); } }
+
+	.swatches { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0 0 1rem; padding: 0; list-style: none; }
+
+	.swatches li {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		padding: .4rem .7rem .4rem .45rem;
+		border: 1px solid var(--line);
+		border-radius: 999px;
+		font-size: .82rem;
+	}
+
+	.chip {
+		width: 1.15rem;
+		height: 1.15rem;
+		border-radius: 50%;
+		border: 1px solid rgba(0, 0, 0, .12);
+	}
+
+	table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: .9rem; }
+	th, td { padding: .5rem .6rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+	th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+	code { background: var(--soft); padding: .1rem .35rem; border-radius: 4px; font-size: .88em; }
+
+	.pass { color: #15803d; font-weight: 600; }
+
+	footer {
+		margin-top: 3rem;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--line);
+		font-size: .88rem;
+		color: var(--muted);
+	}
+
+	a { color: #1d6fa5; }
+</style>
+</head>
+<body>
+
+<header>
+	<div class="wrap">
+		<h1>Acuerdos de Privacidad y Términos — vista previa</h1>
+		<p>Ventana de consentimiento para ecuasoltic.com · versión 1.2.1</p>
+	</div>
+</header>
+
+<div class="wrap">
+
+	<h2>En ordenador</h2>
+	<p class="note">
+		El botón empieza gris y no se puede pulsar. Al marcar la casilla se activa y
+		toma el celeste de su marca.
+	</p>
+
+	<div class="pair">
+		<figure>
+			<img src="img/desktop-1-locked.png" alt="La ventana con la casilla sin marcar y el botón gris" loading="lazy">
+			<figcaption>Casilla sin marcar — botón gris, bloqueado.</figcaption>
+		</figure>
+		<figure>
+			<img src="img/desktop-2-ticked.png" alt="La ventana con la casilla marcada y el botón celeste activo" loading="lazy">
+			<figcaption>Casilla marcada — botón celeste, activo.</figcaption>
+		</figure>
+	</div>
+
+	<h2>En móvil (390&nbsp;px)</h2>
+	<p class="note">
+		En pantallas estrechas se apoya en la parte inferior. Si el texto crece, la
+		ventana se desplaza por dentro, así que el botón siempre queda accesible.
+	</p>
+
+	<div class="phones">
+		<figure>
+			<img src="img/mobile-1-locked.png" alt="Vista móvil con el botón gris" loading="lazy">
+			<figcaption>Sin marcar.</figcaption>
+		</figure>
+		<figure>
+			<img src="img/mobile-2-ticked.png" alt="Vista móvil con el botón celeste" loading="lazy">
+			<figcaption>Marcada.</figcaption>
+		</figure>
+	</div>
+
+	<h2>Los colores</h2>
+	<p class="note">
+		Tomados de su sitio. El celeste <code>#1ebbf0</code> no se usa detrás de texto
+		blanco: esa combinación da un contraste de 2,23:1 y el mínimo legible es 4,5:1.
+		Por eso la cabecera usa el mismo tono oscurecido, y el botón conserva su celeste
+		exacto pero con texto casi negro.
+	</p>
+
+	<ul class="swatches">
+		<li><span class="chip" style="background:#1ebbf0"></span> #1ebbf0 — su celeste, en el botón</li>
+		<li><span class="chip" style="background:#0b5a78"></span> #0b5a78 — cabecera (7,6:1)</li>
+		<li><span class="chip" style="background:#06323f"></span> #06323f — texto del botón (6,1:1)</li>
+		<li><span class="chip" style="background:#93c01f"></span> #93c01f — verde de su sitio, alternativa</li>
+	</ul>
+
+	<h2>El panel de ajustes</h2>
+	<p class="note">
+		Todo el texto, los enlaces, los iconos y los colores se cambian desde aquí.
+		Ya viene configurado: no hay nada que escribir.
+	</p>
+
+	<figure>
+		<img src="img/admin-5-preconfigured.png" alt="Pantalla de ajustes del plugin, ya configurada" loading="lazy">
+		<figcaption>Ajustes &rarr; Terms Consent Popup.</figcaption>
+	</figure>
+
+	<figure>
+		<img src="img/admin-6-where-it-shows.png" alt="Opciones de dónde aparece la ventana" loading="lazy">
+		<figcaption>«Home page only» — aparece solo en la página de inicio.</figcaption>
+	</figure>
+
+	<h2>Qué queda bloqueado</h2>
+	<table>
+		<tr><th>Tecla Escape</th><td>No cierra nada.</td></tr>
+		<tr><th>Clic en el fondo</th><td>No cierra nada.</td></tr>
+		<tr><th>Botón de cerrar</th><td>No existe.</td></tr>
+		<tr><th>Desplazar la página</th><td>Bloqueado: rueda, dedo y teclado.</td></tr>
+		<tr><th>Tabulador</th><td>No sale de la ventana.</td></tr>
+		<tr><th>Enlaces de detrás</th><td>No se pueden pulsar.</td></tr>
+		<tr><th>Borrarla con F12</th><td>Vuelve a aparecer sola.</td></tr>
+		<tr><th>Sin JavaScript</th><td>PHP la imprime igual, la página sigue tapada.</td></tr>
+	</table>
+
+	<h2>Comprobaciones automáticas</h2>
+	<table>
+		<tr><th>La ventana</th><td>64 comprobaciones <span class="pass">correctas</span> — ordenador y móvil</td></tr>
+		<tr><th>Los ajustes</th><td>26 comprobaciones <span class="pass">correctas</span></td></tr>
+		<tr><th>Documentos vacíos</th><td>13 comprobaciones <span class="pass">correctas</span></td></tr>
+		<tr><th>Total</th><td><strong>103 de 103</strong></td></tr>
+	</table>
+
+	<footer>
+		Hecho por Anirudha Talmale. Las capturas vienen de una instalación de
+		WordPress real con el plugin activo, no son maquetas.
+	</footer>
+
+</div>
+
+</body>
+</html>
